@@ -31,6 +31,7 @@ module ActsLikeGit
         
         self.git_settings.versioned_fields.each do |column|
           git_read_method = "def #{column}(reload = true); reload ? read_git_method('#{column}') : read_attribute(:#{column}); end"          
+
           evaluate_attribute_method column, git_read_method
           
           git_write_method = "def #{column}=(val); write_git_method('#{column}', val); end"          
