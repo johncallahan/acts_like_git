@@ -29,4 +29,10 @@ To view the complete list of changes:
   >> @post.title
   => 'Joe'
 
+Note that ActsLikeGit will store the current value of the field in your database, so you can use @post.title as before.  If you want
+to force git to reload the field's data, send true to the attribute like
+
+    @post.title(true)
+
+
 Copyright (c) 2008 [Jamie van Dyke, Courtenay Gasking, Scott Chacon, Roman Le Négrate], released under the MIT license.
