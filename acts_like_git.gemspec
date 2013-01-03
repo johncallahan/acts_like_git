@@ -7,13 +7,13 @@ Gem::Specification.new do |s|
   s.name     = "acts_like_git"
   s.version  = ActsLikeGit::VERSION.dup
   s.date     = "2013-01-03"
-  s.summary  = "TODO: Summary of project"
-  s.email    = "todo@project.com"
-  s.homepage = "http://todo.project.com/"
-  s.authors  = ['Me Todo']
+  s.summary  = "Provides git-like versioning, hashing, and rollback for ActiveRecord objects"
+  s.email    = "johncallahan@github.com"
+  s.homepage = "https://github.com/johncallahan/acts_like_git"
+  s.authors  = ['johncallahan']
   
   s.description = <<-EOF
-TODO: Long description 
+Provides git-like versioning, hashing, and rollback for ActiveRecord objects 
 EOF
   
   dependencies = [
